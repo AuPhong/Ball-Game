@@ -34,7 +34,7 @@ export default class Paddle {
         if (this.position.x + this.width > this.gameWidth) {
             this.position.x = this.gameWidth - this.width
         }
-        console.log(this.position.x)
+        // console.log(this.position.x)
     }
 
     stop(){
