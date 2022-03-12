@@ -1,3 +1,5 @@
+import {detectColision} from "./colisionDetection.js";
+
 export default class {
     constructor(game, position) {
         this.img = document.getElementById('brick_img')
