@@ -5,8 +5,8 @@ export default class {
         this.gameWidth = game.gameWidth
         this.gameHeight = game.gameHeight
         this.game = game
-        this.width = 50
-        this.height = 60
+        this.width = 60
+        this.height = 30
     }
 
     draw(ctx) {
