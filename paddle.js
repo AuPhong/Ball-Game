@@ -1,3 +1,4 @@
+
 export default class Paddle {
     constructor(game) {
         this.gameWidth = game.gameWidth
