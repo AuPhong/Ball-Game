@@ -3,8 +3,8 @@ import {detectColision} from "./colisionDetection.js";
 export default class Ball {
     constructor(game) {
         this.img = document.getElementById('ball_img')
-        this.position = {x: 10, y: 10}
-        this.speed = {x: 10, y: 5}
+        this.position = {x: 10, y: 300}
+        this.speed = {x: 10, y: -2}
         this.size = 16
         this.gameWidth = game.gameWidth
         this.gameHeight = game.gameHeight
