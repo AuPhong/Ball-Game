@@ -1,4 +1,4 @@
-import Paddle from "/BallGame/paddle.js";
+import Paddle from "./paddle.js";
 import InputHandler from "./input.js";
 import Ball from "./Ball.js";
 import Game from "./game.js";
