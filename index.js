@@ -20,8 +20,8 @@ function gameLoop(timestamp){
     game.update(deltaTime)
     game.draw(ctx)
 
-
     requestAnimationFrame(gameLoop)
 }
 
 requestAnimationFrame(gameLoop)
+
