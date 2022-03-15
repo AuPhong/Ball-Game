@@ -18,6 +18,7 @@ export default class Game {
         this.gamestate = GAMESTATE.MENU
         this.paddle = new Paddle(this)
         this.ball = new Ball(this)
+        this.ball2 = new Ball(this)
         new InputHandler(this.paddle, this)
         this.gameObjects = []
         this.lives = 3
@@ -56,7 +57,6 @@ export default class Game {
 
     draw(ctx) {
         [...this.gameObjects, ...this.bricks].forEach(object => object.draw(ctx))
-
         if (this.gamestate === GAMESTATE.PAUSED) {
             ctx.rect(0, 0, this.gameWidth, this.gameHeight)
             ctx.fillStyle = "rgba(0,0,0,0.5)"
@@ -99,6 +99,7 @@ export default class Game {
             ctx.fillStyle = 'white'
             ctx.textAlign = 'center'
             ctx.fillText("YOU WIN", this.gameWidth / 2, this.gameHeight / 2)
+            return
         }
     }
 

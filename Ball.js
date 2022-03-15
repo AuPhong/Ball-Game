@@ -36,7 +36,10 @@ export default class Ball {
 
         // bottom of game
         if(this.position.y + this.size > this.gameHeight){
+
+
             this.game.lives--
+            document.getElementById('live').innerHTML = 'Mạng: '+this.game.lives
             this.reset()
         }
 
