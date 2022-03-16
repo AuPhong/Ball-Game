@@ -12,7 +12,7 @@ export default class Ball {
 
     reset() {
         this.position = {x: 10, y: 300}
-        this.speed = {x: 10, y: -2}
+        this.speed = {x: 5, y: -2}
     }
 
     draw(ctx) {
