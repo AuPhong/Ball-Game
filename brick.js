@@ -23,6 +23,11 @@ export default class Brick {
             this.game.ball.speed.y = -this.game.ball.speed.y
             this.markedForDeletion = true
         }
+        if (detectColision(this.game.ball2, this)) {
+            // console.log('va cham')
+            this.game.ball2.speed.y = -this.game.ball2.speed.y
+            this.markedForDeletion = true
+        }
 
     }
 }

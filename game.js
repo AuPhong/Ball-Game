@@ -2,6 +2,8 @@ import Ball from "./Ball.js";
 import InputHandler from "./input.js";
 import Paddle from "./paddle.js";
 import {buildLevel, level1} from "./level.js";
+import Ball2 from "./Ball2.js";
+
 
 const GAMESTATE = {
     PAUSED: 0,
@@ -18,7 +20,7 @@ export default class Game {
         this.gamestate = GAMESTATE.MENU
         this.paddle = new Paddle(this)
         this.ball = new Ball(this)
-        this.ball2 = new Ball(this)
+        this.ball2 = new Ball2(this)
         new InputHandler(this.paddle, this)
         this.gameObjects = []
         this.lives = 3
@@ -32,7 +34,7 @@ export default class Game {
         }
 
         this.bricks = buildLevel(this, level1)
-        this.gameObjects = [this.ball, this.paddle]
+        this.gameObjects = [this.ball,this.ball2, this.paddle]
 
         this.gamestate = GAMESTATE.RUNNING
     }
