@@ -23,7 +23,7 @@ export default class Game {
         this.ball2 = new Ball2(this)
         new InputHandler(this.paddle, this)
         this.gameObjects = []
-        this.lives = 3
+        this.lives = 99
         this.bricks = []
     }
 
